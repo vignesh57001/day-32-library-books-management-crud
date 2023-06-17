@@ -11,6 +11,10 @@ function Books() {
     navigate("/view-book");
   };
 
+  const createBook = () => {
+    navigate("/create-book");
+  };
+
   const updateBook = ({ id, bookname, authorname, bookcode, bookprice }) => {
     localStorage.setItem("id", id);
     localStorage.setItem("bookname", bookname);
@@ -40,10 +44,26 @@ function Books() {
 
   return (
     <div className="all-book-table">
-      Books
       <table className="total-table-body">
-        {/* <caption>Team Information</caption> */}
         <thead>
+          <th>
+            <button
+              className="custom-btn btn-12 button-rotate"
+              onClick={() => createBook()}
+            >
+              <span>Click!</span>
+              <span>Create - Book</span>
+            </button>
+          </th>
+          <th>
+            <button
+              className="custom-btn btn-12 button-rotate"
+              onClick={() => viewBook()}
+            >
+              <span>Click!</span>
+              <span>View</span>
+            </button>
+          </th>
           <tr className="thead">
             <th scope="col">ID</th>
             <th scope="col">Book Name</th>

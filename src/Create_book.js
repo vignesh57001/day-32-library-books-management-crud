@@ -43,6 +43,7 @@ function Create_book() {
                   className="form-input"
                   type="text"
                   id="bookname"
+                  required="required"
                   value={bookname}
                   onChange={(event) => setBookname(event.target.value)}
                 />
@@ -55,6 +56,7 @@ function Create_book() {
                   className="form-input"
                   type="text"
                   id="authorname"
+                  required="required"
                   value={authorname}
                   onChange={(event) => setAuthorname(event.target.value)}
                 />
@@ -67,6 +69,7 @@ function Create_book() {
                   className="form-input"
                   type="text"
                   id="bookcode"
+                  required="required"
                   value={bookcode}
                   onChange={(event) => setBookcode(event.target.value)}
                 />
@@ -79,6 +82,7 @@ function Create_book() {
                   className="form-input"
                   type="number"
                   id="bookprice"
+                  required="required"
                   value={bookprice}
                   onChange={(event) => setBookprice(event.target.value)}
                 />
